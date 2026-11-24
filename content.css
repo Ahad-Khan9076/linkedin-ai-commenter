@@ -1,11 +1,11 @@
-/* AI Comment button */
+/* AI Comment button – Pink theme #DE5B68 */
 .li-ai-comment-btn {
   display: inline-flex;
   align-items: center;
   gap: 2px;
   padding: 6px 12px;
   margin-left: 8px;
-  background: linear-gradient(135deg, #0a66c2, #004182);
+  background: linear-gradient(135deg, #DE5B68, #c44a56);
   color: #fff !important;
   border: none;
   border-radius: 16px;
@@ -20,8 +20,9 @@
 
 .li-ai-comment-btn:hover {
   transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(10, 102, 194, 0.4);
+  box-shadow: 0 2px 8px rgba(222, 91, 104, 0.45);
   opacity: 0.95;
+  background: linear-gradient(135deg, #e86b77, #DE5B68);
 }
 
 .li-ai-comment-btn:disabled {
@@ -57,10 +58,10 @@
 .li-ai-result-panel {
   margin: 12px 16px;
   padding: 14px 16px;
-  background: #f3f6f8;
-  border: 1px solid #e0e0e0;
+  background: #fff;
+  border: 1px solid #f0d0d4;
   border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 12px rgba(222, 91, 104, 0.12);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   animation: li-ai-fadein 0.25s ease;
 }
@@ -77,7 +78,7 @@
   margin-bottom: 10px;
   font-size: 13px;
   font-weight: 600;
-  color: #0a66c2;
+  color: #DE5B68;
 }
 
 .li-ai-close {
@@ -85,18 +86,18 @@
   border: none;
   font-size: 20px;
   line-height: 1;
-  color: #666;
+  color: #999;
   cursor: pointer;
   padding: 0 4px;
 }
 
 .li-ai-close:hover {
-  color: #191919;
+  color: #DE5B68;
 }
 
 .li-ai-result-text {
-  background: white;
-  border: 1px solid #ddd;
+  background: #fffafb;
+  border: 1px solid #f5d6da;
   border-radius: 8px;
   padding: 12px 14px;
   font-size: 14px;
@@ -121,28 +122,28 @@
   cursor: pointer;
   border: none;
   font-family: inherit;
-  transition: background 0.15s;
+  transition: background 0.15s, color 0.15s;
 }
 
 .li-ai-insert-btn {
-  background: #0a66c2;
+  background: #DE5B68;
   color: white;
 }
 
 .li-ai-insert-btn:hover {
-  background: #004182;
+  background: #c44a56;
 }
 
 .li-ai-copy-btn,
 .li-ai-regen-btn {
   background: white;
-  color: #0a66c2;
-  border: 1px solid #0a66c2 !important;
+  color: #DE5B68;
+  border: 1px solid #DE5B68 !important;
 }
 
 .li-ai-copy-btn:hover,
 .li-ai-regen-btn:hover {
-  background: #e8f0fe;
+  background: #fff0f2;
 }
 
 /* Toast notification */
@@ -165,9 +166,9 @@
 }
 
 .li-ai-toast.success {
-  background: #057642;
+  background: #DE5B68;
 }
 
 .li-ai-toast.error {
-  background: #cc1016;
+  background: #b83a47;
 }

@@ -9,7 +9,7 @@
     body {
       width: 340px;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #f4f2ee;
+      background: #fff;
       color: #191919;
       padding: 16px;
     }
@@ -20,10 +20,11 @@
       display: flex;
       align-items: center;
       gap: 8px;
+      color: #DE5B68;
     }
     .subtitle {
       font-size: 12px;
-      color: #666;
+      color: #888;
       margin-bottom: 16px;
     }
     label {
@@ -36,7 +37,7 @@
     select, input[type="password"], input[type="text"], textarea {
       width: 100%;
       padding: 8px 10px;
-      border: 1px solid #ccc;
+      border: 1px solid #e0c0c4;
       border-radius: 6px;
       font-size: 13px;
       margin-bottom: 12px;
@@ -44,8 +45,8 @@
     }
     select:focus, input:focus, textarea:focus {
       outline: none;
-      border-color: #0a66c2;
-      box-shadow: 0 0 0 2px rgba(10,102,194,0.2);
+      border-color: #DE5B68;
+      box-shadow: 0 0 0 2px rgba(222, 91, 104, 0.2);
     }
     .row {
       display: flex;
@@ -56,7 +57,7 @@
     button {
       width: 100%;
       padding: 10px;
-      background: #0a66c2;
+      background: #DE5B68;
       color: white;
       border: none;
       border-radius: 24px;
@@ -64,15 +65,16 @@
       font-weight: 600;
       cursor: pointer;
       margin-top: 4px;
+      transition: background 0.15s;
     }
-    button:hover { background: #004182; }
+    button:hover { background: #c44a56; }
     button.secondary {
       background: transparent;
-      color: #0a66c2;
-      border: 1px solid #0a66c2;
+      color: #DE5B68;
+      border: 1px solid #DE5B68;
       margin-top: 8px;
     }
-    button.secondary:hover { background: #e8f0fe; }
+    button.secondary:hover { background: #fff0f2; }
     .status {
       font-size: 12px;
       margin-top: 10px;
@@ -80,16 +82,16 @@
       border-radius: 6px;
       display: none;
     }
-    .status.success { background: #e6f4ea; color: #137333; display: block; }
+    .status.success { background: #fff0f2; color: #DE5B68; display: block; border: 1px solid #f5d6da; }
     .status.error { background: #fce8e6; color: #c5221f; display: block; }
     .hint {
       font-size: 11px;
-      color: #666;
+      color: #888;
       margin-top: -8px;
       margin-bottom: 12px;
       line-height: 1.4;
     }
-    a { color: #0a66c2; text-decoration: none; }
+    a { color: #DE5B68; text-decoration: none; }
     a:hover { text-decoration: underline; }
     .toggle-row {
       display: flex;
@@ -121,13 +123,13 @@
       border-radius: 50%;
       transition: 0.2s;
     }
-    input:checked + .slider { background: #0a66c2; }
+    input:checked + .slider { background: #DE5B68; }
     input:checked + .slider:before { transform: translateX(18px); }
   </style>
 </head>
 <body>
   <h1>
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="#0a66c2"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="#DE5B68"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
     LinkedIn AI Commenter
   </h1>
   <p class="subtitle">Smart comments • Gen-Z for funny posts</p>
